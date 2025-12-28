@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarHub - Premium Cars at Unbeatable Prices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>CarHub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#cars">Our Cars</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="book-btn" onclick="openBookingModal()">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="gradient-text">CarHub</span></h1>
+            <p class="hero-subtitle">Where Luxury Meets Affordability - Drive Your Dream Car Today!</p>
+            <p class="hero-description">Experience the thrill of premium automotive excellence with unbeatable prices and guaranteed quality. Your journey to luxury starts here.</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary" onclick="scrollToSection('cars')">
+                    <span>Explore Cars</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="cta-btn secondary" onclick="openBookingModal()">
+                    <span>Book Test Drive</span>
+                    <i class="fas fa-calendar-check"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2>About CarHub</h2>
+                <p>Your Trusted Partner in Premium Automotive Excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Redefining Car Ownership</h3>
+                    <p>At CarHub, we believe that everyone deserves to drive their dream car without breaking the bank. We're revolutionizing the automotive industry by offering world-class luxury vehicles at market-leading prices that simply can't be beaten.</p>
+                    <p>With years of expertise and a passion for excellence, we curate the finest selection of premium vehicles from iconic brands like Mercedes-Benz, Ferrari, Lamborghini, and Toyota. Our commitment to quality, transparency, and customer satisfaction has made us the most trusted name in automotive retail.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>5-Month Guarantee</h4>
+                                <p>Every car backed by our comprehensive warranty</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <h4>Best Prices</h4>
+                                <p>Unbeatable market rates on all vehicles</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>24/7 Service</h4>
+                                <p>We're here whenever you need us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1562911791-c7a97b729ec5?w=800&h=600&fit=crop" alt="Luxury Car Showroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Premium Collection</span>
+                <h2>Our Stunning Fleet</h2>
+                <p>Handpicked Selection of World's Most Coveted Automobiles</p>
+            </div>
+            <div class="cars-grid">
+                <!-- Mercedes -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop" alt="Mercedes-Benz">
+                        <div class="car-badge">Popular</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes-Benz</h3>
+                        <p class="car-desc">The epitome of German engineering and luxury</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0-60 in 4.5s</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                            <span><i class="fas fa-gas-pump"></i> Premium</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$45,900</span>
+                            </div>
+                            <button class="view-btn" onclick="openBookingModal('Mercedes-Benz')">
+                                <span>Book Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferrari -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop" alt="Ferrari">
+                        <div class="car-badge exclusive">Exclusive</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Ferrari</h3>
+                        <p class="car-desc">Italian masterpiece of speed and elegance</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0-60 in 2.9s</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                            <span><i class="fas fa-gas-pump"></i> Premium</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$215,000</span>
+                            </div>
+                            <button class="view-btn" onclick="openBookingModal('Ferrari')">
+                                <span>Book Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamborghini -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop" alt="Lamborghini">
+                        <div class="car-badge exclusive">Exclusive</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Lamborghini</h3>
+                        <p class="car-desc">Unleash the beast within, pure adrenaline</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0-60 in 2.8s</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                            <span><i class="fas fa-gas-pump"></i> Premium</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$225,000</span>
+                            </div>
+                            <button class="view-btn" onclick="openBookingModal('Lamborghini')">
+                                <span>Book Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop" alt="Toyota">
+                        <div class="car-badge">Best Value</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Toyota</h3>
+                        <p class="car-desc">Legendary reliability meets modern sophistication</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0-60 in 7.5s</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$28,500</span>
+                            </div>
+                            <button class="view-btn" onclick="openBookingModal('Toyota')">
+                                <span>Book Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive Care for Your Dream Car</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>5-Month Guarantee</h3>
+                    <p>Every vehicle comes with our comprehensive 5-month warranty covering all major components. Drive with complete peace of mind knowing you're fully protected.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Free Maintenance</h3>
+                    <p>Complimentary maintenance services during the guarantee period including oil changes, inspections, and minor repairs to keep your car in pristine condition.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Test Drives</h3>
+                    <p>Experience your dream car firsthand with our hassle-free test drive service. Book anytime, and our team will have your preferred vehicle ready for you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trade-In Program</h3>
+                    <p>Get the best value for your current vehicle with our transparent trade-in program. Fair assessments and instant quotes guaranteed.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Flexible Financing</h3>
+                    <p>Multiple financing options with competitive rates to fit your budget. Our finance experts will help you find the perfect payment plan.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your needs. Whether it's a question or an emergency, we're always here to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Visit Our Showroom or Reach Out Anytime</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Near University of Washington DC<br>Washington DC, USA</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+92 311 7700104</p>
+                        <a href="https://wa.me/923117700104" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mk.khan808090@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>24 Hours - 7 Days a Week<br>Always Here for You!</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Your Dream Car</h2>
+            <p class="modal-subtitle">Fill in the details and we'll get back to you within 24 hours</p>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label>Select Car</label>
+                    <select id="carSelect" required>
+                        <option value="">Choose a car...</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Toyota">Toyota</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" required placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Message (Optional)</label>
+                    <textarea rows="3" placeholder="Any special requests or questions?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Confirm Booking</span>
+                    <i class="fas fa-check"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>CarHub</span>
+                    </div>
+                    <p>Your trusted partner in premium automotive excellence. Drive your dream car today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#cars">Our Cars</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Washington DC, USA</li>
+                        <li><i class="fas fa-phone"></i> +11 7700104</li>
+                        <li><i class="fas fa-envelope"></i> mk.izharkhan1@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CarHub. All Rights Reserved. | Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
